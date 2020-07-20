@@ -4,12 +4,15 @@ public class Namefinder {
 
 	public String FullName(String first, String last) throws NameException
 	{
-		if(first == null ||last == null)
+		if(first.isBlank()||last.isBlank())
 	{
 		throw new NameException("name is blank");
 	}
-		
-		return first+last;
+		else
+		{
+			return first+last;
+
+		}
 		
 	}
 }
